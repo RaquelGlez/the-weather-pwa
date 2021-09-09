@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "the.weather",
+  "name": "the.weather",
   "icons": [
     {
       "src": "favicon.ico",
@@ -13,9 +13,15 @@
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "logo256.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "256x256"
+    },
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "341x341",
+      "purpose": "maskable"
     }
   ],
   "start_url": ".",
@@ -23,3 +29,7 @@
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }
+
+
+
+
