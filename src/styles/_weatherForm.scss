@@ -1,0 +1,60 @@
+
+.weatherForm__container {
+  display: flex;
+  height: 50%;
+  margin-left: 2em;
+  width: 90%;
+
+   // background-color: rgb(43, 161, 207);
+}
+
+.weatherForm__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.weatherForm__input-city {
+  background-color: transparent;
+  border-style: none;
+  border-bottom: 1px solid $primary;
+  color: $primary;
+  height: 3.3em;
+  padding: 1px 1px 0px;
+  width: 70%;
+
+ // background-color: rgb(131, 218, 131);
+
+    &:focus-visible {
+      border-bottom: 1px solid white;
+      outline: none;
+    }
+
+    &::placeholder {
+      color: rgba($primary, 0.5);
+      
+    }
+}
+
+.weatherForm__input-btn {
+   // width: 20%;
+    width: 4em;
+    height: 4em;
+    background-color: $fire;
+    box-sizing:none;
+    border-width: 0;
+    border-style:none;
+    box-shadow: 5px 5px 5px $red inset;
+    cursor: pointer;
+    transition: width .3s ease, height .3s 
+
+    svg {
+      width: 1.5em;
+      height: 1.5em;
+    }
+
+    &:hover {
+      background: darken( $fire,7%);
+    }
+}

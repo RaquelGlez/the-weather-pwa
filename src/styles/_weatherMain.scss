@@ -1,0 +1,39 @@
+.weatherMain__container {
+    display: grid;
+    //grid-template-columns: 0.5fr repeat(3, 1fr) 0.5fr;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: start;
+    align-items: center;
+    //font-size: 3em;
+   // background-color: rgb(134, 86, 179);
+}
+
+.weatherMain__temp {
+    grid-column: 1/2;
+    font-size: 3em;
+}
+
+.weatherMain__city {
+    grid-column: 2/3;
+    font-size: 2.5em;
+    
+}
+
+.weatherMain__description {
+    grid-column: 3/4;
+    justify-self: center;
+    text-align: center;
+}
+
+.weatherMain__description-icon {
+    svg {
+        font-size: 2em;
+        height: 1em;
+        width: 1em;
+    }
+}
+
+.weatherMain__description-text {
+    margin: 0;
+    font-size: 0.8em;
+}
