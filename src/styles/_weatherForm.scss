@@ -1,11 +1,7 @@
-
 .weatherForm__container {
   display: flex;
   height: 50%;
   margin-left: 2em;
-  width: 90%;
-
-   // background-color: rgb(43, 161, 207);
 }
 
 .weatherForm__form {
@@ -20,11 +16,10 @@
   border-style: none;
   border-bottom: 1px solid $primary;
   color: $primary;
+  font-size: 1em;
   height: 3.3em;
   padding: 1px 1px 0px;
   width: 70%;
-
- // background-color: rgb(131, 218, 131);
 
     &:focus-visible {
       border-bottom: 1px solid white;
@@ -38,7 +33,6 @@
 }
 
 .weatherForm__input-btn {
-   // width: 20%;
     width: 4em;
     height: 4em;
     background-color: $fire;
@@ -57,4 +51,12 @@
     &:hover {
       background: darken( $fire,7%);
     }
+}
+
+.weatherForm__error {
+  background-color: rgba($red, 0.4);
+  font-size: 0.7em;
+  margin: 0.5em auto;
+  text-align: center;
+  width: 40%;
 }

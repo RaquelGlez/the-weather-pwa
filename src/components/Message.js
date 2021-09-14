@@ -13,8 +13,6 @@ export const Message = ({ msg, bgColor }) => {
         backgroundColor:bgColor,
     };
 
-    console.log("code error message", typeof(code));
-
     return (
         <div style={styles}>
             <p>{ msg }</p>

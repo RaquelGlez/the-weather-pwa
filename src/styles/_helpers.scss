@@ -1,20 +1,15 @@
-
 /* loader styles */
 
 .lds-dual-ring {
   display: inline-block;
-  //width: 80px;
   width: 5em;
-  //height: 80px;
   height: 5em;
 }
 
 .lds-dual-ring:after {
   content: " ";
   display: block;
-  //width: 64px;
   width: 3em;
-  //height: 64px;
   height: 3em;
   margin: 8px;
   border-radius: 50%;

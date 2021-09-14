@@ -1,11 +1,8 @@
 .weatherMain__container {
     display: grid;
-    //grid-template-columns: 0.5fr repeat(3, 1fr) 0.5fr;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 0.8fr repeat(2, 1fr);
     justify-items: start;
-    align-items: center;
-    //font-size: 3em;
-   // background-color: rgb(134, 86, 179);
+    align-items: center; 
 }
 
 .weatherMain__temp {
@@ -36,4 +33,11 @@
 .weatherMain__description-text {
     margin: 0;
     font-size: 0.8em;
+}
+
+
+@media (max-width: 767px) {
+    .weatherMain__description {
+        justify-self: start;
+    }
 }

@@ -2,19 +2,19 @@ import React, { useState } from "react";
 
 export const WeatherForm = ({ handleSearch }) => {
   const [inputValue, setInputValue] = useState("");
+  const [emptyInput, setEmptyInput] = useState(false)
   const handleInputChange = (e) => {
-    // console.log(e.target.value);
     setInputValue(e.target.value);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // console.log("valor del input: ", inputValue);
-    // console.log("submit hecho");
 
     if (!inputValue) {
-      alert("No has ingresado texto");
-      return;
+      setEmptyInput(true)
+      return 
+    } else {
+      setEmptyInput(false)
     }
 
     handleSearch(inputValue);
@@ -35,24 +35,22 @@ export const WeatherForm = ({ handleSearch }) => {
   );
 
   return (
-    <div className="weatherForm__container">
-      <form onSubmit={handleSubmit} className="weatherForm__form">
-        <input
-          type="text"
-          placeholder="City"
-          value={inputValue}
-          onChange={handleInputChange}
-          className="weatherForm__input-city"
-        />
-        <button type="submit" className="weatherForm__input-btn">
-          {iconSearch}
-        </button>
-        {/* <input
-          type="submit"
-          value=
-          className="weatherForm__input-submit"
-        /> */}
-      </form>
-    </div>
+    <>
+      <div className="weatherForm__container">
+        <form onSubmit={handleSubmit} className="weatherForm__form">
+          <input
+            type="text"
+            placeholder="City"
+            value={inputValue}
+            onChange={handleInputChange}
+            className="weatherForm__input-city"
+          />
+          <button type="submit" className="weatherForm__input-btn">
+            {iconSearch}
+          </button>
+        </form>
+      </div>
+      {emptyInput&&<p className="weatherForm__error">Enter a city</p>}
+    </>
   );
 };
