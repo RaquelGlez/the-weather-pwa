@@ -30,7 +30,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "start-sw": "http-server ./build"
+    "start-sw": "http-server ./build",
+    "predeploy": "npm build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
