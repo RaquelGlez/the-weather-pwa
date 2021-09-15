@@ -7,7 +7,7 @@ import { WeatherData } from "./WeatherData";
 import { getWeather } from "../helpers/getWeather";
 
 export const WeatherManager = () => {
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState("Mexico");
   const [weatherDetail, setWeatherDetail] = useState(null);
   const [loading, setLoading] = useState(false);
   const [errorFetch, setErrorFetch] = useState(400);

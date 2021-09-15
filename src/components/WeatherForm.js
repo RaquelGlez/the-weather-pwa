@@ -45,7 +45,7 @@ export const WeatherForm = ({ handleSearch }) => {
             onChange={handleInputChange}
             className="weatherForm__input-city"
           />
-          <button type="submit" className="weatherForm__input-btn">
+          <button type="submit" aria-label="Search" className="weatherForm__input-btn">
             {iconSearch}
           </button>
         </form>
