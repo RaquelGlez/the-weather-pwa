@@ -8,6 +8,10 @@ Cuenta con un buscador, que permite consultar el clima para cualquier ciudad del
 
 &nbsp;
 
+La aplicación puede verse [aquí](https://raquelglez.github.io/the-weather-pwa/)
+
+&nbsp;
+
 
 ## Construido con
 _____
